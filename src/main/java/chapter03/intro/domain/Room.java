@@ -26,4 +26,9 @@ public class Room extends MapSite {
     public void setSide(Direction direction, MapSite mapSite) {
         sides[direction.ordinal()] = mapSite;
     }
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
 }
