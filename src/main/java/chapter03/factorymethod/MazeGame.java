@@ -36,6 +36,8 @@ public abstract class MazeGame {
         return new Maze();
     }
 
+    // 팩토리 메서드들
+    
     public abstract Room makeRoom(int n);
 
     public abstract Wall makeWall();
