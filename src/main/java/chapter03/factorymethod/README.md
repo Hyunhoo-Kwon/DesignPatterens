@@ -87,6 +87,7 @@ public static void main(String[] args) {
 
 ### 단점
 - 제품 클래스가 바뀔 때마다 새로운 서브클래스를 생성해야 한다
+- 서브 클래스가 너무 많이 만들어진다
 
 ### 참고
  - [Design Patterns Tutorial - Factory Pattern](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
