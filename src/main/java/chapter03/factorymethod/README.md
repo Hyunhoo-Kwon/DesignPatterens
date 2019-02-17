@@ -57,7 +57,7 @@ public class EnchantedMazeGame extends MazeGame {
 ```
 @Test
 public void createEnchantedMaze() throws Exception {
-    mazeGame = new EnchantedMazeGame();
+    MazeGame mazeGame = new EnchantedMazeGame();
     Maze maze = mazeGame.createMaze();
 }
 ```
