@@ -1,5 +1,5 @@
 # DesignPatterens
-GoF의 디자인 패턴 스터디
+GoF의 디자인 패턴 스터디 & Java 예제코드 구현
 
 스터디 팀 GitHub: https://github.com/betterdevstomorrow/design-patterns
 
