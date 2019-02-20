@@ -13,6 +13,10 @@
 - 시스템이 어떤 구체 클래스를 사용하는지에 대한 정보를 캡슐화한다
 - 클라이언트 코드는 인터페이스와만 동작하기 때문에, 사용자가 정의한 어떤 서브클래스와도 동작할 수 있다
 
+### 단점
+- 제품 클래스가 바뀔 때마다 새로운 서브클래스를 생성해야 한다
+- 서브 클래스가 너무 많이 만들어진다
+
 ### 구현
 1. 추상 클래스 정의: 추상 클래스(또는 인터페이스)로 정의하고, 서브클래스에서 정의한 팩토리 메서드를 대한 구현한다
 2. 매개변수화: 팩토리 메서드가 매개변수를 받아서 어떤 종류의 제품을 생성할지 식별하게 만든다
@@ -78,16 +82,12 @@ public class ShapeFactory {
 - 호출 코드
 ```
 public static void main(String[] args) {
-      ShapeFactory shapeFactory = new ShapeFactory();
-      Shape shape1 = shapeFactory.getShape("CIRCLE");
-      Shape shape2 = shapeFactory.getShape("RECTANGLE");
-      Shape shape3 = shapeFactory.getShape("SQUARE");
-   }
+  ShapeFactory shapeFactory = new ShapeFactory();
+  Shape shape1 = shapeFactory.getShape("CIRCLE");
+  Shape shape2 = shapeFactory.getShape("RECTANGLE");
+  Shape shape3 = shapeFactory.getShape("SQUARE");
+}
 ```
 
-### 단점
-- 제품 클래스가 바뀔 때마다 새로운 서브클래스를 생성해야 한다
-- 서브 클래스가 너무 많이 만들어진다
-
 ### 참고
- - [Design Patterns Tutorial - Factory Pattern](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
+- [Design Patterns Tutorial - Factory Pattern](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
