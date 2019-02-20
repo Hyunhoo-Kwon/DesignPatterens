@@ -2,6 +2,7 @@ package chapter03.factorymethod;
 
 import chapter03.intro.domain.Maze;
 import chapter03.intro.domain.Room;
+import chapter03.intro.domain.RoomWithABomb;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
@@ -35,7 +36,7 @@ public class MazeGameTest {
         Maze maze = mazeGame.createMaze();
 
         assertThat(maze, instanceOf(Maze.class));
-        assertThat(maze.roomNo(1), instanceOf(Room.class));
+        assertThat(maze.roomNo(1), instanceOf(RoomWithABomb.class));
     }
 
 }
