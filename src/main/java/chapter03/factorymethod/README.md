@@ -78,7 +78,7 @@ public void createBombedMaze() throws Exception {
 }
 ```
 
-##### 2. 매개변수화 예제 [(Ref. https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)]
+##### 2. 매개변수화 예제 (Ref. https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
 - 매개변수화된 팩토리 메서드 코드
 ```
 public class ShapeFactory {
