@@ -61,20 +61,20 @@ public class EnchantedMazeFactory implements MazeFactory {
 - [호출 테스트 코드](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/test/java/chapter03/abstractfactory/MazeGameTest.java)
 ```
 @Test
-public void createDefaultMaze() throws Exception {
-    mazeGame = new DefaultMazeGame();
-    Maze maze = mazeGame.createMaze();
+public void createDefaultMaze() {
+    MazeFactory factory = new DefaultMazeFactory();
+    Maze maze = mazeGame.createMaze(factory);
 }
 
 @Test
-public void createEnchantedMaze() throws Exception {
-    mazeGame = new EnchantedMazeGame();
-    Maze maze = mazeGame.createMaze();
+public void createEnchantedMaze() {
+    MazeFactory factory = new EnchantedMazeFactory();
+    Maze maze = mazeGame.createMaze(factory);
 }
 
 @Test
-public void createBombedMaze() throws Exception {
-    mazeGame = new BombedMazeGame();
-    Maze maze = mazeGame.createMaze();
+public void createBombedMaze() {
+    MazeFactory factory = new BombedMazeFactory();
+    Maze maze = mazeGame.createMaze(factory);
 }
 ```
