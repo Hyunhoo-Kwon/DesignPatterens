@@ -41,7 +41,7 @@ public Maze createMaze() {
   - 미로, 방, 문, 벽 등 클래스 이름을 하드코딩해놨기 때문에 서로 다른 구성요소를 가지고 미로를 만들어 내기 힘들다
   
 ### 생성 패턴 종류
- - 추상 팩토리 (Abstract Factory)
+ - [추상 팩토리 (Abstract Factory)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/abstractfactory)
  - 빌더 (Builder)
  - [팩토리 메서드 (Factory Method)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/factorymethod)
  - [원형 (Prototype)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/prototype)
