@@ -42,7 +42,7 @@ public Maze createMaze() {
   
 ### 생성 패턴 종류
  - [추상 팩토리 (Abstract Factory)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/abstractfactory)
- - 빌더 (Builder)
+ - [빌더 (Builder)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/builder)
  - [팩토리 메서드 (Factory Method)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/factorymethod)
  - [원형 (Prototype)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/prototype)
  - 단일체 (Singleton)
