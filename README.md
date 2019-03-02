@@ -14,3 +14,6 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
 - 적응자 (Adapter)
 - 가교 (Bridge)
 - 복합체 (Composite)
+
+### 참고
+- [C++ 구현 예제 코드](https://github.com/BartVandewoestyne/Design-Patterns-GoF)
