@@ -6,6 +6,6 @@
   - 구조 객체 패턴: 구현을 복합하는 것이 아닌 새로운 기능을 실현하기 위해 객체를 합성하는 방법
   
 ### 구조 패턴 종류
-- 적응자 (Adapter)
+- [적응자 (Adapter)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/adapter)
 - 가교 (Bridge)
 - 복합체 (Composite)
