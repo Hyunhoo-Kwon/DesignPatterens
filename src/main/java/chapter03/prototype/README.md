@@ -3,6 +3,9 @@
 ### 목적
 원형이 되는(prototypical) 인스턴스를 사용하여 생성할 객체의 종류를 명시하고, 이렇게 만든 견본을 복사해서 새로운 객체를 생성
 
+### 동기
+- [The maze problem](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03#the-maze-problem): 기존 미로가 갖고 있는 레이아웃을 재사용하면서 마법의 미로 게임을 만드는 방법은? 어떻게 하면 createMaze() 함수를 쉽게 바꿔 새로운 타입의 미로를 만들 수 있을까?
+
 ### 활용
 - 제품의 생성, 복합, 표현 방법에 독립적인 제품을 만들고자 할 때
 - 제품 클래스 계통과 병렬적으로 만드는 팩토리 클래스를 피하고 싶을 때
