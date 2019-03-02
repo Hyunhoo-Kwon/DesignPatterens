@@ -4,6 +4,9 @@
 - 인스턴스를 만드는 절차를 추상화 하는 패턴
 - 객체를 생성/합성하는 방법이나 객체의 표현 방법과 시스템을 분리
 
+### 동기
+- [The maze problem](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03#the-maze-problem): 기존 미로가 갖고 있는 레이아웃을 재사용하면서 마법의 미로 게임을 만드는 방법은? 어떻게 하면 createMaze() 함수를 쉽게 바꿔 새로운 타입의 미로를 만들 수 있을까?
+
 ### 생성패턴의 핵심
 1. 시스템이 어떤 구체 클래스를 사용하는지에 대한 정보를 캡슐화한다
 2. 구체 클래스의 인스턴스들이 어떻게 만들고 서로 맞붙는지에 대한 부분을 가려준다
