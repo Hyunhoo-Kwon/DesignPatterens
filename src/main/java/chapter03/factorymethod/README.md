@@ -3,6 +3,9 @@
 ### 목적
 객체를 생성하기 위한 인터페이스를 정의하지만, 어떤 클래스의 인스턴스를 생성할지에 대한 결정은 서브클래스에 위임한다
 
+### 동기
+- [The maze problem](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03#the-maze-problem): 기존 미로가 갖고 있는 레이아웃을 재사용하면서 마법의 미로 게임을 만드는 방법은? 어떻게 하면 createMaze() 함수를 쉽게 바꿔 새로운 타입의 미로를 만들 수 있을까?
+
 ### 활용
 - 어떤 클래스가 자신이 생성해야 하는 객체의 클래스를 예측할 수 없을 때
 - 생성할 객체를 기술하는 책임을 자신의 서브클래스가 지정했으면 할 때
