@@ -10,7 +10,7 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
  - 원형 (Prototype)
  - 단일체 (Singleton)
 
-### chapter03. 구조 패턴 (Structural Patterns)
+### chapter04. 구조 패턴 (Structural Patterns)
 - 적응자 (Adapter)
 - 가교 (Bridge)
 - 복합체 (Composite)
