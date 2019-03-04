@@ -17,6 +17,9 @@
 - 확장성: Abstraction과 Implementor를 독립적으로 확장할 수 있고, 상위 수준의 영역에서는 Abstraction과 Implementor만 알면 된다
 - 상세한 구현 내용을 사용자에게서 은닉할 수 있다
 
+### 단점
+- 구현 방법이 오로지 하나일 때 Implementor를 추상 클래스/인터페이스로 정의하는 것은 불필요
+
 ### 구조
 - Abstraction: 추상적 개념에 대한 인터페이스를 제공하고 객체 구현자(Implementor)에 대한 참조자를 관리
 - RefinedAbstraction: 추상적 개념에 정의된 인터페이스를 확장
@@ -24,7 +27,55 @@
 - ConcreteImplementor: Implementor 구현체
 
 ### 구현 (Ref. https://zetawiki.com/wiki/Bridge_%ED%8C%A8%ED%84%B4)
+- Abstraction: Shape
+```
+abstract class Shape {
+   protected DrawingAPI drawingAPI;
+ 
+   protected Shape(DrawingAPI drawingAPI){
+      this.drawingAPI = drawingAPI;
+   }
+ 
+   public abstract void draw();
+}
+```
 
+- RefinedAbstraction: CircleShape, ...
+```
+class CircleShape extends Shape {
+   private double x, y, radius;
+   public CircleShape(double x, double y, double radius, DrawingAPI drawingAPI) {
+      super(drawingAPI);
+      this.x = x;  this.y = y;  this.radius = radius;
+   }
+ 
+   public void draw() {
+        drawingAPI.drawCircle(x, y, radius);
+   }
+}
+```
+
+- Implementor: DrawingAPI
+```
+interface DrawingAPI {
+    public void drawCircle(double x, double y, double radius);
+}
+```
+
+- ConcreteImplementor: DrawingAPI1, DrawingAPI2, ...
+```
+class DrawingAPI1 implements DrawingAPI {
+   public void drawCircle(double x, double y, double radius) {
+        System.out.printf("API1.circle at %f:%f radius %f\n", x, y, radius);
+   }
+}
+
+class DrawingAPI2 implements DrawingAPI {
+   public void drawCircle(double x, double y, double radius) {
+        System.out.printf("API2.circle at %f:%f radius %f\n", x, y, radius);
+   }
+}
+```
 
 ### 참고
 - [Java Bridge pattern](https://zetawiki.com/wiki/Bridge_%ED%8C%A8%ED%84%B4)
