@@ -28,7 +28,100 @@
 > - 안전성을 우선하는 경우: Component 클래스와 이 서브클래스에만 연산을 정의하면, 사용자는 Leaf 클래스의 인스턴스에서 이런 연산을 요청하지 않으므로 안전성을 보장받는다. 그러나 Leaf 클래스와 Composite 클래스가 서로 다른 인터페이스를 갖게 되므로 사용자는 이를 동일한 대상으로 간주하고 사용할 수 없게 된다.
 
 ### 구현
+- Component: [Equipment](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/composite/Equipment.java)
+```
+public interface Equipment {
+    public int netPrice();
+    public List<Equipment> createIterator();
+    public void add(Equipment equipment);
+    public void remove(Equipment equipment);
+}
+```
 
+- Leaf: [FloppyDisk](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/composite/FloppyDisk.java), [Card](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/composite/Card.java)
+```
+public class FloppyDisk implements Equipment {
+    @Override
+    public int netPrice() {
+        return 10;
+    }
+
+    @Override
+    public List<Equipment> createIterator() {
+        return Collections.emptyList();
+    }
+
+    @Override
+    public void add(Equipment equipment) {
+
+    }
+
+    @Override
+    public void remove(Equipment equipment) {
+
+    }
+}
+```
+
+- Composite: [CompositeEquipment](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/composite/CompositeEquipment.java), Cabinet, Chassis, Bus
+```
+public class CompositeEquipment implements Equipment {
+    private List<Equipment> equipments = new ArrayList<>();
+
+    @Override
+    public int netPrice() {
+        List<Equipment> iterator = createIterator();
+        int total = 0;
+        for(Equipment equipment : iterator) {
+            total += equipment.netPrice();
+        }
+        return total;
+    }
+
+    @Override
+    public List<Equipment> createIterator() {
+        return equipments;
+    }
+
+    @Override
+    public void add(Equipment equipment) {
+        equipments.add(equipment);
+    }
+
+    @Override
+    public void remove(Equipment equipment) {
+        equipments.remove(equipment);
+    }
+}
+```
+```
+public class Cabinet extends CompositeEquipment {
+}
+```
+
+- Client: [테스트 코드](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/test/java/chapter04/composite/CompositeTest.java)
+```
+public class CompositeTest {
+    @Test
+    public void compositeEquipmentTest() {
+        Cabinet cabinet = new Cabinet();
+        Chassis chassis = new Chassis();
+
+        cabinet.add(chassis);
+
+        Bus bus = new Bus();
+        bus.add(new Card());
+
+        chassis.add(bus);
+        FloppyDisk floppyDisk = new FloppyDisk();
+        chassis.add(floppyDisk);
+
+        assertThat(bus.netPrice(), is(11));
+        assertThat(floppyDisk.netPrice(), is(10));
+        assertThat(chassis.netPrice(), is(21)); // 11 + 10
+    }
+}
+```
 
 ### 참고
 - [jQuery composite pattern](https://subscription.packtpub.com/book/web_development/9781785888687/1/ch01lvl1sec09/the-composite-pattern)
