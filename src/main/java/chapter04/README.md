@@ -8,4 +8,6 @@
 ### 구조 패턴 종류
 - [적응자 (Adapter)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/adapter)
 - [가교 (Bridge)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/bridge)
-- 복합체 (Composite)
+- [복합체 (Composite)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/composite)
+- 장식자 (Decorator)
+- 퍼사드 (Facade)
