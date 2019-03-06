@@ -11,9 +11,11 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
  - [단일체 (Singleton)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03/singleton)
 
 ### chapter04. [구조 패턴 (Structural Patterns)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04)
-- 적응자 (Adapter)
-- 가교 (Bridge)
-- 복합체 (Composite)
+- [적응자 (Adapter)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/adapter)
+- [가교 (Bridge)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/bridge)
+- [복합체 (Composite)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/composite)
+- 장식자 (Decorator)
+- 퍼사드 (Facade)
 
 ### 참고
 - [C++ 구현 예제 코드](https://github.com/BartVandewoestyne/Design-Patterns-GoF)
