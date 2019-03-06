@@ -124,4 +124,5 @@ public class CompositeTest {
 ```
 
 ### 참고
+- [JAVA composite pattern](https://jdm.kr/blog/228)
 - [jQuery composite pattern](https://subscription.packtpub.com/book/web_development/9781785888687/1/ch01lvl1sec09/the-composite-pattern)
