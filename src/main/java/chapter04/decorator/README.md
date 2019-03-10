@@ -42,7 +42,7 @@ public interface VisualComponent {
 }
 ```
 
-- ConcreteComponent: TextView(https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/TextView.java)
+- ConcreteComponent: [TextView](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/TextView.java)
 ```
 public class TextView implements VisualComponent {
     @Override
