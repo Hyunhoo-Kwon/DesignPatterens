@@ -34,7 +34,81 @@
 4. 객체의 겉포장을 변경할 것인가, 속을 변경할 것인가
 
 ### 예제코드
+- Component: [VisualComponent](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/VisualComponent.java)
+```
+public interface VisualComponent {
+    public void draw();
+    public void resize();
+}
+```
 
+- ConcreteComponent: TextView(https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/TextView.java)
+```
+public class TextView implements VisualComponent {
+    @Override
+    public void draw() {
+        System.out.println("TextView");
+    }
+    @Override
+    public void resize() {
+
+    }
+}
+```
+
+- Decorator: [Decorator](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/Decorator.java)
+```
+public class Decorator implements VisualComponent {
+    private VisualComponent component;
+
+    public Decorator(VisualComponent component) {
+        this.component = component;
+    }
+    @Override
+    public void draw() {
+        component.draw();
+    }
+    @Override
+    public void resize() {
+        component.resize();
+    }
+}
+```
+
+- ConcreteDecorator: [BorderDecorator](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/BorderDecorator.java), [ScrollDecorator](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/ScrollDecorator.java), [DropShadowDecorator](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/main/java/chapter04/decorator/DropShadowDecorator.java)
+```
+public class BorderDecorator extends Decorator {
+    private int width;
+
+    public BorderDecorator(VisualComponent component, int width) {
+        super(component);
+        this.width = width;
+    }
+    @Override
+    public void draw() {
+        super.draw();
+        drawBorder(width);
+    }
+    private void drawBorder(int width) {
+        // ...
+        System.out.println("drawBoard");
+    }
+}
+```
+
+- Client: [테스트 코드](https://github.com/Hyunhoo-Kwon/DesignPatterens/blob/master/src/test/java/chapter04/decorator/DecoratorTest.java)
+```
+public class DecoratorTest {
+    @Test
+    public void decoratorTest() {
+        Window window = new Window();
+        TextView textView = new TextView();
+
+        window.setComponent(new DropShadowDecorator(new BorderDecorator(new ScrollDecorator(textView), 1)));
+        window.getComponent().draw();
+    }
+}
+```
 
 ### 참고
 - [Java Decorator pattern](https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html)
