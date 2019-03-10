@@ -8,7 +8,7 @@ public class Window {
         this.component = component;
     }
 
-    public void draw() {
-        component.draw();
+    public VisualComponent getComponent() {
+        return component;
     }
 }

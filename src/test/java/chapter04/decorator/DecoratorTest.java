@@ -3,7 +3,7 @@ package chapter04.decorator;
 import chapter04.decorator.problem.TextViewWithDropShadowAndBorderAndScroll;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.io.*;
 
 public class DecoratorTest {
 
@@ -13,13 +13,19 @@ public class DecoratorTest {
         TextView textView = new TextView();
 
         window.setComponent(new DropShadowDecorator(new BorderDecorator(new ScrollDecorator(textView), 1)));
-        window.draw();
+        window.getComponent().draw();
     }
 
     @Test
     public void decoratorProblemTest() {
         TextViewWithDropShadowAndBorderAndScroll textViewWithDropShadowAndBorderAndScroll = new TextViewWithDropShadowAndBorderAndScroll(1);
         textViewWithDropShadowAndBorderAndScroll.draw();
+    }
+
+    @Test
+    public void readerTest() throws Exception {
+        LineNumberReader lineNumberReader = new LineNumberReader(new BufferedReader(new FileReader(new File("/Users/kakao/test.txt"))));
+        System.out.println(lineNumberReader.readLine());
     }
 
 }
