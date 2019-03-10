@@ -38,4 +38,5 @@
 
 ### 참고
 - [Java Decorator pattern](https://gmlwjd9405.github.io/2018/07/09/decorator-pattern.html)
-- [Decorator pattern in JDK](https://www.quora.com/What-are-the-examples-of-Decorator-design-pattern-in-JDK)
+- [Decorator pattern in JDK](https://www.javaworld.com/article/2075920/decorate-your-java-code.html)
+    - [java Reader class](https://stackoverflow.com/questions/46994892/decorator-pattern-java-io-reader)
