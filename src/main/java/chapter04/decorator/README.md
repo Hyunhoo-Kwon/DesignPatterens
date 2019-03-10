@@ -5,7 +5,7 @@
 
 ### 동기
 - 전체 클래스에 새로운 기능을 추가할 필요는 없지만, 개별적인 객체에 새로운 책임을 추가할 필요가 있는 경우 **상속을 통한 기능 확장**은 각 기능별로 클래스를 추가해야 한다
-    - [예제코드](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/decorator/problem)) TextView 클래스에 스크롤바, 테두리, 그림자 기능이 필요하게 된다면 TextView의 서브클래스 [TextViewWithBorder], TextViewWithScroll, TextViewWithDropShadow 클래스를 구현?
+    - [예제코드](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/decorator/problem)) TextView 클래스에 스크롤바, 테두리, 그림자 기능이 필요하게 된다면 TextView의 서브클래스 TextViewWithBorder, TextViewWithScroll, TextViewWithDropShadow 클래스를 구현?
     - 2개, 3개 기능을 같이 사용하게 된다면 TextView의 서브클래스 TextViewWithBorderAndScroll, TextViewWithDropShadowAndBorderAndScroll 클래스를 구현?
     > 필요한 기능이 더 늘어나면 클래스 갯수가 기하급수적으로 늘어나게 된다
     
