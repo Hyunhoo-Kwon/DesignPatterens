@@ -14,8 +14,10 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
 - [적응자 (Adapter)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/adapter)
 - [가교 (Bridge)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/bridge)
 - [복합체 (Composite)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/composite)
-- 장식자 (Decorator)
-- 퍼사드 (Facade)
+- [장식자 (Decorator)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/decorator)
+- [퍼사드 (Facade)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/facade)
+- 플라이급 (Flyweight)
+- 프록시 (Proxy)
 
 ### 참고
 - [C++ 구현 예제 코드](https://github.com/BartVandewoestyne/Design-Patterns-GoF)
