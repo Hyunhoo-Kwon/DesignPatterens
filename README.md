@@ -16,8 +16,12 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
 - [복합체 (Composite)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/composite)
 - [장식자 (Decorator)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/decorator)
 - [퍼사드 (Facade)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/facade)
-- 플라이급 (Flyweight)
-- 프록시 (Proxy)
+- [플라이급 (Flyweight)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/flyweight)
+- [프록시 (Proxy)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/proxy)
+
+### chapter05. 행동 패턴 (Behavioral Patterns)
+- 책임 연쇄 (Chain of Responsibility)
+- 명령 (Command)
 
 ### 참고
 - [C++ 구현 예제 코드](https://github.com/BartVandewoestyne/Design-Patterns-GoF)
