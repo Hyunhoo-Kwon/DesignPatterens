@@ -11,5 +11,5 @@
 - [복합체 (Composite)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/composite)
 - [장식자 (Decorator)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/decorator)
 - [퍼사드 (Facade)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/facade)
-- 플라이급 (Flyweight)
-- 프록시 (Proxy)
+- [플라이급 (Flyweight)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/flyweight)
+- [프록시 (Proxy)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/proxy)
