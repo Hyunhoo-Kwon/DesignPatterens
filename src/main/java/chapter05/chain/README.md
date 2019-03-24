@@ -25,3 +25,4 @@
 > 사용자는 처리를 요청하고, 이 처리 요청은 실제로 그 요청을 받을 책임이 있는 ConcreteHandler 객체를 만날 때까지 정의된 연결 고리를 따라서 계속 전달된다
 
 ### 참고
+- https://www.journaldev.com/1617/chain-of-responsibility-design-pattern-in-java
