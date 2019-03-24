@@ -6,5 +6,7 @@
   - 행동 객체 패턴: 하나의 작업을 수행하기 위해 객체 집합이 어떻게 협력하는지 기술한다. 하나의 객체가 스스로 모든 처리를 하는 것이 아니라, 관련된 객체들이 하나의 처리를 책임지는 방법이다(행동 처리의 책임을 분산)
   
 ### 행동 패턴 종류
-- 책임 연쇄 (Chain of Responsibility)
-- 명령 (Command)
+- [책임 연쇄 (Chain of Responsibility)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter05/chain)
+- [명령 (Command)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter05/command)
+- 해석자 (Interpreter)
+- 반복자 (Iterator)
