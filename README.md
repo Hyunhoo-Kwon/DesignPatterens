@@ -19,9 +19,11 @@ GoF의 디자인 패턴 스터디 & Java 예제코드 구현
 - [플라이급 (Flyweight)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/flyweight)
 - [프록시 (Proxy)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter04/proxy)
 
-### chapter05. 행동 패턴 (Behavioral Patterns)
-- 책임 연쇄 (Chain of Responsibility)
-- 명령 (Command)
+### [chapter05. 행동 패턴 (Behavioral Patterns)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter05)
+- [책임 연쇄 (Chain of Responsibility)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter05/chain)
+- [명령 (Command)](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter05/command)
+- 해석자 (Interpreter)
+- 반복자 (Iterator)
 
 ### 참고
 - [C++ 구현 예제 코드](https://github.com/BartVandewoestyne/Design-Patterns-GoF)
