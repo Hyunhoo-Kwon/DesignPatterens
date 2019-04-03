@@ -26,6 +26,5 @@
 - 새로운 Command를 추가하기 쉽다: 기존 클래스를 변경할 필요 없이 단지 새로운 명령어에 대응하는 클래스만 정의하면 된다
 
 ### 참고
-- https://moonshoo.tistory.com/5
-- https://gdtbgl93.tistory.com/23
+- https://www.baeldung.com/java-command-pattern
 - https://stackoverflow.com/questions/35610215/java-command-pattern-example-with-runnable-class-is-receiver-missing
