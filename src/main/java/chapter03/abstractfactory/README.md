@@ -81,3 +81,6 @@ public void createBombedMaze() {
     Maze maze = mazeGame.createMaze(factory);
 }
 ```
+
+### 참고
+- https://www.journaldev.com/1418/abstract-factory-design-pattern-in-java
