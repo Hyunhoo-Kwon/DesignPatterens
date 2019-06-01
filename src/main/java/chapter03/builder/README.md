@@ -16,4 +16,4 @@
 - 복합 객체를 생성하는 절차를 세밀하게 나눌 수 있다
 
 ### 참고
-- [Effective java 스터디 - Builder 패턴] (https://github.com/Hyunhoo-Kwon/EffectiveJava/tree/master/Examples/src/main/java/chapter02/item02)
+- [Effective java 스터디 - Builder 패턴](https://github.com/Hyunhoo-Kwon/EffectiveJava/tree/master/Examples/src/main/java/chapter02/item02)
