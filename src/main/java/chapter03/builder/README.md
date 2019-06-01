@@ -4,7 +4,7 @@
 복잡한 객체를 생성하는 방법과 표현하는 방법을 정의하는 클래스를 별도로 분리하여, 서로 다른 표현이라도 이를 생성할 수 있는 동일한 절차를 제공
 
 ### 동기
-- [The maze problem](https://github.com/Hyunhoo-Kwon/DesignPatterens/tree/master/src/main/java/chapter03#the-maze-problem): 기존 미로가 갖고 있는 레이아웃을 재사용하면서 마법의 미로 게임을 만드는 방법은? 어떻게 하면 createMaze() 함수를 쉽게 바꿔 새로운 타입의 미로를 만들 수 있을까?
+- 생성자에 전달되는 선택적 인자수가 많을 때 적용 가능한 방법
 
 ### 활용
 - 복합 객체의 생성 알고리즘이 이를 합성하는 요소 객체들이 무엇인지 이들의 조립 방법에 독립적일 때
@@ -14,3 +14,6 @@
 - 제품에 대한 내부 표현을 다양하게 변화할 수 있다
 - 생성과 표현에 필요한 코드를 분리한다
 - 복합 객체를 생성하는 절차를 세밀하게 나눌 수 있다
+
+### 참고
+- [Effective java 스터디 - Builder 패턴] (https://github.com/Hyunhoo-Kwon/EffectiveJava/tree/master/Examples/src/main/java/chapter02/item02)
